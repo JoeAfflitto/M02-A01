@@ -1,6 +1,6 @@
 package controller;
 
-import model.BusinessObjects.Manager;
+import model.Users.Manager;
 import view.ManagerUI;
 
 /**
@@ -15,8 +15,12 @@ public class ManagerCntl {
     private Manager manager;
     private ManagerUI ui;
 
-    public ManagerCntl(Manager m, ManagerUI mUI){
+    /**
+     *
+     * @param m Points to the instance of Manager class respective of current user
+     */
+    public ManagerCntl(Manager m){
         this.manager = m;
-        this.ui = mUI;
+        this.ui = new ManagerUI(this);
     }
 }

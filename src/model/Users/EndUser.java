@@ -1,4 +1,4 @@
-package model;
+package model.Users;
 
 /**
  * The EndUser class stores information about the current user of the online service
@@ -12,6 +12,11 @@ public class EndUser {
     private int psuID;
     private String displayName;
 
+    /**
+     *
+     * @param id the user's PSU ID, for connecting to PSU Single Sign On service.
+     * @param dn The user's preferred display name.
+     */
     public EndUser(int id, String dn){
         this.psuID = id;
         this.displayName = dn;

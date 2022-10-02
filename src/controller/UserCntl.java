@@ -1,6 +1,6 @@
 package controller;
 
-import model.EndUser;
+import model.Users.EndUser;
 import view.OrderingUI;
 
 /**
@@ -15,8 +15,12 @@ public class UserCntl {
     private OrderingUI ui;
     private EndUser user;
 
-    public UserCntl(OrderingUI oUI, EndUser u){
-        this.ui = oUI;
+    /**
+     *
+     * @param u EndUser object containing current users' data
+     */
+    public UserCntl(EndUser u){
+        this.ui = new OrderingUI(this);
         this.user = u;
     }
 }
