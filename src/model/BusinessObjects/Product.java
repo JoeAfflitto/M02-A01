@@ -1,5 +1,8 @@
 package model.BusinessObjects;
 
+/**
+ * Acts as datatype to store information about a given product
+ */
 public class Product {
     private String title;
     private String desc;
