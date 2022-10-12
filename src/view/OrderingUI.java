@@ -1,5 +1,7 @@
 package view;
 
+import java.util.ArrayList;
+
 import controller.UserCntl;
 
 /**
@@ -12,6 +14,7 @@ import controller.UserCntl;
  */
 public class OrderingUI {
     private UserCntl controller;
+
 
     /**
      * Main constructor.
