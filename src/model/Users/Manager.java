@@ -25,4 +25,28 @@ public class Manager {
         this.logonName = ln;
         this.password = pass;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLogonName() {
+        return logonName;
+    }
+
+    public void setLogonName(String logonName) {
+        this.logonName = logonName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

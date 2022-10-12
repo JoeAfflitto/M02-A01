@@ -9,6 +9,8 @@ package model.Users;
  * @since 2022-02-08
  */
 public class Employee {
+
+
     private String name;
     private String logonName;
     private String password;
@@ -24,5 +26,29 @@ public class Employee {
         this.name = n;
         this.logonName = ln;
         this.password = p;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLogonName() {
+        return logonName;
+    }
+
+    public void setLogonName(String logonName) {
+        this.logonName = logonName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
